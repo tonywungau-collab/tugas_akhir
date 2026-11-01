@@ -25,10 +25,10 @@ plt.show()
 # print(df)
 
 #step 3 tentukan feature dan label
-df.drop(columns=['jam_Kolom'], axis=1) # atau df.drop('Nama_Kolom', axis=1)
+#df.drop(columns=['jam_Kolom'], axis=1) # atau df.drop('Nama_Kolom', axis=1)
 
-# x = df.drop(columns=["Nilai_kolom_target"])
-y = df["Nilai_kolom"]
+x = df.drop(columns=["Jam"])
+y = df["Nilai"]
 
 #step 4 train tes split
 x_train, xtest, y_train, y_test = train_test_split(
