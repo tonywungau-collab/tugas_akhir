@@ -21,7 +21,7 @@ def baca_csv():
                 data.append({
                     "nama": row["Nama"],
                     "kelas": row["Kelas"],
-                    "jam": row["Jam"],
+                    "jam": int(row["Jam"]},
                     "nilai": int(row["Nilai"])
                     
                 })
